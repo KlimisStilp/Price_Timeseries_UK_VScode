@@ -11,7 +11,7 @@ Price is given in daily frequency, with 1 hour gap.<p>
 ## Data
 - Solar Generation (Covariate)
 - Wind On Shore Generation (Covariate)
-- Wind Off Shoe Generation (Covariate)
+- Wind Off Shore Generation (Covariate)
 - Total Load (Demand) (Covariate)
 -  Price (Target Variable) (Covariate)
 
