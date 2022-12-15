@@ -20175,3 +20175,327 @@ Alternately, you can install this by running `pip install pycaret[models]`
 2022-12-08 11:56:53,336:INFO:Plot type: pipeline
 2022-12-08 11:56:53,459:INFO:Visual Rendered Successfully
 2022-12-08 11:56:53,617:INFO:plot_model() successfully completed......................................
+2022-12-15 14:39:40,349:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-12-15 14:39:40,351:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-12-15 14:39:40,351:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-12-15 14:39:40,352:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-12-15 14:39:43,877:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-12-15 14:39:44,797:INFO:PyCaret RegressionExperiment
+2022-12-15 14:39:44,798:INFO:Logging name: reg-default-name
+2022-12-15 14:39:44,799:INFO:ML Usecase: MLUsecase.REGRESSION
+2022-12-15 14:39:44,799:INFO:version 3.0.0.rc4
+2022-12-15 14:39:44,801:INFO:Initializing setup()
+2022-12-15 14:39:44,802:INFO:self.USI: c857
+2022-12-15 14:39:44,802:INFO:self.variable_keys: {'_all_metrics', 'display_container', 'memory', '_gpu_n_jobs_param', 'n_jobs_param', 'fold_groups_param', '_all_models_internal', 'y', 'exp_name_log', 'html_param', 'fold_generator', 'transform_target_param', 'exp_id', 'X_test', 'USI', 'X_train', '_ml_usecase', '_available_plots', 'data', 'idx', '_all_models', 'y_test', 'target_param', 'variable_keys', 'transform_target_method_param', 'X', 'gpu_param', 'y_train', 'log_plots_param', 'logging_param', 'fold_shuffle_param', 'master_model_container', 'seed', 'pipeline'}
+2022-12-15 14:39:44,803:INFO:Checking environment
+2022-12-15 14:39:44,803:INFO:python_version: 3.9.13
+2022-12-15 14:39:44,803:INFO:python_build: ('main', 'Oct 13 2022 21:23:06')
+2022-12-15 14:39:44,803:INFO:machine: AMD64
+2022-12-15 14:39:44,803:INFO:platform: Windows-10-10.0.19044-SP0
+2022-12-15 14:39:44,804:INFO:Memory: svmem(total=16579715072, available=4535881728, percent=72.6, used=12043833344, free=4535881728)
+2022-12-15 14:39:44,805:INFO:Physical Core: 10
+2022-12-15 14:39:44,805:INFO:Logical Core: 12
+2022-12-15 14:39:44,806:INFO:Checking libraries
+2022-12-15 14:39:44,806:INFO:System:
+2022-12-15 14:39:44,807:INFO:    python: 3.9.13 (main, Oct 13 2022, 21:23:06) [MSC v.1916 64 bit (AMD64)]
+2022-12-15 14:39:44,807:INFO:executable: c:\Users\2836589S\Anaconda3\envs\Klimis_39\python.exe
+2022-12-15 14:39:44,807:INFO:   machine: Windows-10-10.0.19044-SP0
+2022-12-15 14:39:44,808:INFO:PyCaret required dependencies:
+2022-12-15 14:39:44,808:INFO:                 pip: 22.2.2
+2022-12-15 14:39:44,808:INFO:          setuptools: 65.5.0
+2022-12-15 14:39:44,808:INFO:             pycaret: 3.0.0rc4
+2022-12-15 14:39:44,808:INFO:             IPython: 8.6.0
+2022-12-15 14:39:44,809:INFO:          ipywidgets: 8.0.2
+2022-12-15 14:39:44,809:INFO:                tqdm: 4.64.1
+2022-12-15 14:39:44,809:INFO:               numpy: 1.22.3
+2022-12-15 14:39:44,809:INFO:              pandas: 1.4.2
+2022-12-15 14:39:44,809:INFO:              jinja2: 3.1.2
+2022-12-15 14:39:44,809:INFO:               scipy: 1.7.3
+2022-12-15 14:39:44,809:INFO:              joblib: 1.2.0
+2022-12-15 14:39:44,809:INFO:             sklearn: 1.1.3
+2022-12-15 14:39:44,809:INFO:                pyod: 1.0.6
+2022-12-15 14:39:44,809:INFO:            imblearn: 0.9.1
+2022-12-15 14:39:44,809:INFO:   category_encoders: 2.5.1.post0
+2022-12-15 14:39:44,809:INFO:            lightgbm: 3.3.3
+2022-12-15 14:39:44,809:INFO:               numba: 0.55.2
+2022-12-15 14:39:44,809:INFO:            requests: 2.28.1
+2022-12-15 14:39:44,809:INFO:          matplotlib: 3.5.3
+2022-12-15 14:39:44,809:INFO:          scikitplot: 0.3.7
+2022-12-15 14:39:44,809:INFO:         yellowbrick: 1.5
+2022-12-15 14:39:44,809:INFO:              plotly: 5.11.0
+2022-12-15 14:39:44,810:INFO:             kaleido: 0.2.1
+2022-12-15 14:39:44,810:INFO:         statsmodels: 0.13.2
+2022-12-15 14:39:44,810:INFO:              sktime: 0.13.4
+2022-12-15 14:39:44,810:INFO:               tbats: 1.1.1
+2022-12-15 14:39:44,810:INFO:            pmdarima: 1.8.5
+2022-12-15 14:39:44,810:INFO:              psutil: 5.9.0
+2022-12-15 14:39:44,810:INFO:PyCaret optional dependencies:
+2022-12-15 14:39:44,841:INFO:                shap: Not installed
+2022-12-15 14:39:44,841:INFO:           interpret: Not installed
+2022-12-15 14:39:44,841:INFO:                umap: Not installed
+2022-12-15 14:39:44,841:INFO:    pandas_profiling: Not installed
+2022-12-15 14:39:44,841:INFO:  explainerdashboard: Not installed
+2022-12-15 14:39:44,841:INFO:             autoviz: Not installed
+2022-12-15 14:39:44,841:INFO:           fairlearn: Not installed
+2022-12-15 14:39:44,841:INFO:             xgboost: Not installed
+2022-12-15 14:39:44,841:INFO:            catboost: Not installed
+2022-12-15 14:39:44,841:INFO:              kmodes: Not installed
+2022-12-15 14:39:44,841:INFO:             mlxtend: Not installed
+2022-12-15 14:39:44,841:INFO:       statsforecast: Not installed
+2022-12-15 14:39:44,841:INFO:        tune_sklearn: Not installed
+2022-12-15 14:39:44,841:INFO:                 ray: Not installed
+2022-12-15 14:39:44,841:INFO:            hyperopt: Not installed
+2022-12-15 14:39:44,841:INFO:              optuna: Not installed
+2022-12-15 14:39:44,841:INFO:               skopt: Not installed
+2022-12-15 14:39:44,841:INFO:              mlflow: Not installed
+2022-12-15 14:39:44,841:INFO:              gradio: Not installed
+2022-12-15 14:39:44,841:INFO:             fastapi: Not installed
+2022-12-15 14:39:44,841:INFO:             uvicorn: Not installed
+2022-12-15 14:39:44,842:INFO:              m2cgen: Not installed
+2022-12-15 14:39:44,842:INFO:           evidently: Not installed
+2022-12-15 14:39:44,842:INFO:                nltk: Not installed
+2022-12-15 14:39:44,842:INFO:            pyLDAvis: Not installed
+2022-12-15 14:39:44,842:INFO:              gensim: Not installed
+2022-12-15 14:39:44,842:INFO:               spacy: Not installed
+2022-12-15 14:39:44,842:INFO:           wordcloud: Not installed
+2022-12-15 14:39:44,842:INFO:            textblob: Not installed
+2022-12-15 14:39:44,842:INFO:               fugue: Not installed
+2022-12-15 14:39:44,842:INFO:           streamlit: Not installed
+2022-12-15 14:39:44,842:INFO:             prophet: Not installed
+2022-12-15 14:39:44,842:INFO:None
+2022-12-15 14:39:44,842:INFO:Set up data.
+2022-12-15 14:39:45,839:INFO:Set up train/test split.
+2022-12-15 14:39:46,541:INFO:Set up index.
+2022-12-15 14:39:46,686:INFO:Set up folding strategy.
+2022-12-15 14:39:46,687:INFO:Assigning column types.
+2022-12-15 14:39:47,163:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2022-12-15 14:39:47,163:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2022-12-15 14:39:47,169:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2022-12-15 14:39:47,173:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2022-12-15 14:39:47,824:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2022-12-15 14:39:47,914:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 14:39:47,914:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:47,975:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:47,976:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2022-12-15 14:39:47,981:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2022-12-15 14:39:47,990:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2022-12-15 14:39:48,682:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2022-12-15 14:39:48,816:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 14:39:48,817:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:48,818:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:48,818:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2022-12-15 14:39:48,829:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2022-12-15 14:39:48,833:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2022-12-15 14:39:49,408:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2022-12-15 14:39:49,487:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 14:39:49,488:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:49,488:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:49,494:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2022-12-15 14:39:49,500:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2022-12-15 14:39:50,045:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2022-12-15 14:39:50,095:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 14:39:50,096:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:50,096:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:50,097:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2022-12-15 14:39:50,108:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2022-12-15 14:39:50,624:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2022-12-15 14:39:50,667:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 14:39:50,668:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:50,668:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:50,679:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2022-12-15 14:39:51,321:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2022-12-15 14:39:51,366:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 14:39:51,366:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:51,366:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:51,367:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2022-12-15 14:39:51,941:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2022-12-15 14:39:51,984:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 14:39:51,984:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:51,985:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:52,491:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2022-12-15 14:39:52,544:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-12-15 14:39:52,545:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:52,545:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:52,545:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2022-12-15 14:39:53,030:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2022-12-15 14:39:53,075:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:53,075:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:53,650:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2022-12-15 14:39:53,701:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:53,701:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:53,701:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2022-12-15 14:39:54,407:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:54,408:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:55,265:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:55,265:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:39:55,269:INFO:Preparing preprocessing pipeline...
+2022-12-15 14:39:55,360:INFO:Set up simple imputation.
+2022-12-15 14:39:55,360:INFO:Set up variance threshold.
+2022-12-15 14:39:58,623:INFO:Finished creating preprocessing pipeline.
+2022-12-15 14:39:58,644:INFO:Pipeline: Pipeline(memory=Memory(location=C:\Users\2836589S\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['SolarGeneration',
+                                             'WindOffGeneration',
+                                             'WindOnGeneration', 'Price_1',
+                                             'Price_2', 'Price_3', 'Price_4',
+                                             'Price_5', 'Price_6', 'Price_7',
+                                             'Price_8', 'Price_9', 'Price_10',
+                                             'Price_11', 'Price_12', 'Price_13',
+                                             'Price_14', 'Price_15', 'Pri...
+                                             'Price_17', 'Price_18', 'Price_19',
+                                             'Price_20', 'Price_21', 'Price_22',
+                                             'Price_23', 'Price_24', 'Price_25',
+                                             'Price_26', 'Price_27', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(fill_value='constant',
+                                                              strategy='constant'))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0)))])
+2022-12-15 14:39:58,644:INFO:Creating final display dataframe.
+2022-12-15 14:40:08,466:INFO:Setup display_container:                Description             Value
+0               Session id              7574
+1                   Target             Price
+2              Target type        Regression
+3               Data shape      (49632, 672)
+4         Train data shape      (34742, 672)
+5          Test data shape      (14890, 672)
+6         Numeric features               671
+7               Preprocess              True
+8          Imputation type            simple
+9       Numeric imputation              mean
+10  Categorical imputation          constant
+11  Low variance threshold                 0
+12          Fold Generator   TimeSeriesSplit
+13             Fold Number                 5
+14                CPU Jobs                -1
+15                 Use GPU             False
+16          Log Experiment             False
+17         Experiment Name  reg-default-name
+18                     USI              c857
+2022-12-15 14:40:09,120:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:40:09,121:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:40:09,706:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:40:09,707:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-12-15 14:40:10,664:INFO:setup() successfully completed in 25.87s...............
+2022-12-15 14:40:10,721:INFO:Initializing create_model()
+2022-12-15 14:40:10,721:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001D2B2EFCCD0>, estimator=lasso, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2022-12-15 14:40:10,722:INFO:Checking exceptions
+2022-12-15 14:40:10,964:INFO:Importing libraries
+2022-12-15 14:40:10,964:INFO:Copying training dataset
+2022-12-15 14:40:11,269:INFO:Defining folds
+2022-12-15 14:40:11,269:INFO:Declaring metric variables
+2022-12-15 14:40:11,272:INFO:Importing untrained model
+2022-12-15 14:40:11,275:INFO:Lasso Regression Imported successfully
+2022-12-15 14:40:11,284:INFO:Starting cross validation
+2022-12-15 14:40:11,296:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2022-12-15 14:40:25,828:WARNING:c:\Users\2836589S\Anaconda3\envs\Klimis_39\lib\site-packages\pycaret\internal\pipeline.py:192: UserWarning: Persisting input arguments took 0.59s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = self._memory_fit(
+
+2022-12-15 14:40:29,909:INFO:Calculating mean and std
+2022-12-15 14:40:29,913:INFO:Creating metrics dataframe
+2022-12-15 14:40:29,922:INFO:Finalizing model
+2022-12-15 14:40:42,184:INFO:Uploading results into container
+2022-12-15 14:40:42,186:INFO:Uploading model into container now
+2022-12-15 14:40:42,201:INFO:master_model_container: 1
+2022-12-15 14:40:42,202:INFO:display_container: 2
+2022-12-15 14:40:42,203:INFO:Lasso(random_state=7574)
+2022-12-15 14:40:42,203:INFO:create_model() successfully completed......................................
+2022-12-15 14:40:42,473:INFO:Initializing evaluate_model()
+2022-12-15 14:40:42,474:INFO:evaluate_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001D2B2EFCCD0>, estimator=Lasso(random_state=7574), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None, use_train_data=False)
+2022-12-15 14:40:42,740:INFO:Initializing plot_model()
+2022-12-15 14:40:42,741:INFO:plot_model(plot=pipeline, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), use_train_data=False, verbose=False, display=None, display_format=None, estimator=Lasso(random_state=7574), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x000001D2B2EFCCD0>, system=True)
+2022-12-15 14:40:42,741:INFO:Checking exceptions
+2022-12-15 14:40:42,961:INFO:Preloading libraries
+2022-12-15 14:40:42,962:INFO:Copying training dataset
+2022-12-15 14:40:42,963:INFO:Plot type: pipeline
+2022-12-15 14:40:43,353:INFO:Visual Rendered Successfully
+2022-12-15 14:40:43,461:INFO:plot_model() successfully completed......................................
+2022-12-15 14:40:53,300:INFO:Initializing plot_model()
+2022-12-15 14:40:53,300:INFO:plot_model(plot=residuals, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), use_train_data=False, verbose=False, display=None, display_format=None, estimator=Lasso(random_state=7574), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x000001D2B2EFCCD0>, system=True)
+2022-12-15 14:40:53,300:INFO:Checking exceptions
+2022-12-15 14:40:53,462:INFO:Preloading libraries
+2022-12-15 14:40:53,463:INFO:Copying training dataset
+2022-12-15 14:40:53,464:INFO:Plot type: residuals
+2022-12-15 14:40:56,679:INFO:Fitting Model
+2022-12-15 14:40:56,834:INFO:Scoring test/hold-out set
+2022-12-15 14:40:58,264:INFO:Visual Rendered Successfully
+2022-12-15 14:40:58,425:INFO:plot_model() successfully completed......................................
+2022-12-15 14:44:15,308:INFO:Initializing plot_model()
+2022-12-15 14:44:15,309:INFO:plot_model(plot=error, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), use_train_data=False, verbose=False, display=None, display_format=None, estimator=Lasso(random_state=7574), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x000001D2B2EFCCD0>, system=True)
+2022-12-15 14:44:15,310:INFO:Checking exceptions
+2022-12-15 14:44:15,514:INFO:Preloading libraries
+2022-12-15 14:44:15,515:INFO:Copying training dataset
+2022-12-15 14:44:15,516:INFO:Plot type: error
+2022-12-15 14:44:19,271:INFO:Fitting Model
+2022-12-15 14:44:19,273:INFO:Scoring test/hold-out set
+2022-12-15 14:44:20,002:INFO:Visual Rendered Successfully
