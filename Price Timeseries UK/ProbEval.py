@@ -6,21 +6,14 @@ def reliability_diagram(df, obs, mu, std):
     Parameters
     ------------
     df: Pandas dataframe
-    obs: str, name of the column that contains the observed value
-    mu: str, name of the column that contains the predicted mean value
-    std: str, name of the column that contains the predicted standard deviation
-    width: int, number that indicates the width of the final plot
-    height: int, number that indicates the height of the final plot
+    obs: Numerical or Array of the observation
+    mu: Numerical or Array that contains the predicted mean value
+    std: Numerical or Array that contains the standard deviation of the predicted mean value's distribution 
+    
 
     Returns
     ------------
     matplotlib plot
-
-
-    Examples
-    ------------
-    reliability_diagram(df=df_results[15], obs='Price', mu='Predicted Value', std='sigma')
-
     """
     
     from scipy.stats import norm
@@ -44,12 +37,27 @@ def reliability_diagram(df, obs, mu, std):
 
 
 
-def crps_norm(df, obs, mu, sigma):
+def crps_norm(df, obs, m, sigma):
     import properscoring as ps
 
-    score = ps.crps_gaussian(df[str(obs)], mu=df[str(mu)], sig=df[str(sigma)])
+    score = ps.crps_gaussian(df[str(obs)], mu=df[str(m)], sig=df[str(sigma)])
     return score
 
+def pinball_loss_norm(df, obs, mu, std):
+    from scipy.stats import norm
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    import numpy as np
+
+    x_val = np.arange(1,99,1)/100
+    y_val = []
+
+    for x in x_val:
+        q_point = norm.ppf(x, loc=df[str(mu)], scale=df[str(std)])
+        a = np.asarray((df[str(obs)] < q_point)*(1-x)*(q_point - df[str(obs)]) + (df[str(obs)] >= q_point)*(x)*(df[str(obs)] - q_point))
+        y_val.append(np.mean(a))
+
+    sns.scatterplot(x=x_val, y=y_val)
 
 
 
