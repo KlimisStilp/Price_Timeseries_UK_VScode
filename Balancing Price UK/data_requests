@@ -1,0 +1,37 @@
+########### Start day of Historical Demand Forecasts #############
+# "2022-02-15T08:15:00Z"
+##################################################################
+
+
+def get_historical_demand_forecast(today=True):
+    import urllib, json
+    import pandas as pd
+    from datetime import datetime
+
+    if today==True:
+        ####### Date range creation #######
+        start_date = datetime.strptime("2022-02-15","%Y-%m-%d")
+        end_date = date.today()
+        date_range = pd.date_range(start_date, end_date, freq='D')
+        date_list = date_range.strftime('%Y-%m-%d').to_list()
+
+        ####### Pulling data from elexon and creating the dataframe #######
+        demand_df = pd.DataFrame()
+        d_df_t = []
+        d_df = []
+
+        times = ['T08:15:00Z', 'T08:45:00Z']
+
+        for d in date_list:
+            for t in times:
+                url = "https://data.elexon.co.uk/bmrs/api/v1/forecast/demand/day-ahead/history?publishTime="+str(d)+str(t)+"&json"
+                response = urllib.request.urlopen(url)
+                data = json.loads(response.read())
+                df = pd.json_normalize(data, record_path=['data'])
+                d_df_t.append(df)
+            d_df.append(pd.concat(d_df_t))
+        
+        demand_df = pd.concat(d_df).set_index('startTime')
+            
+    
+    return demand_df
